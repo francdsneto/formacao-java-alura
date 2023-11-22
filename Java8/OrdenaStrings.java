@@ -1,7 +1,6 @@
 package Java8;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -23,7 +22,12 @@ public class OrdenaStrings {
 
         Comparator<String> comparador = new ComparadorPorTamanho();
 
-        Collections.sort(palavras, comparador);
+        //Collections.sort(palavras, comparador);
+
+        /**
+         * Usando o sort da própria interface List
+         */
+        palavras.sort(comparador);
 
         System.out.println(palavras);
 
