@@ -1,6 +1,8 @@
+package estudos.formacaojava.alura.desafios.banco;
+
 import java.util.Scanner;
 
-public class DesafioAlura {
+public class BancoDigital {
 
     public static void main(String[] args) {
 

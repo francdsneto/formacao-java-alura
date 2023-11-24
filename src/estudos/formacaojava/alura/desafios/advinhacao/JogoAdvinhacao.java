@@ -1,3 +1,5 @@
+package estudos.formacaojava.alura.desafios.advinhacao;
+
 import java.util.Random;
 import java.util.Scanner;
 

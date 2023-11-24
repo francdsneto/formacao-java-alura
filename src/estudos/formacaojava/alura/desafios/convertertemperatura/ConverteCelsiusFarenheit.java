@@ -1,3 +1,5 @@
+package estudos.formacaojava.alura.desafios.convertertemperatura;
+
 import java.util.Scanner;
 
 public class ConverteCelsiusFarenheit {
