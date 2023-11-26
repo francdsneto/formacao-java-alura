@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1a5aa08-7d9d-44a1-99e0-5fdda902fb73" name="Changes" comment="Enviando exercícios da primeira etapa do curso de Formação Java da Alura.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/calculos/CalculadoraTempo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/calculos/Classificavel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/calculos/FiltroRecomendacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/modelos/Episodio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/modelos/Filme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/modelos/Serie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/modelos/Titulo.java" afterDir="false" />
+    <list default="true" id="e1a5aa08-7d9d-44a1-99e0-5fdda902fb73" name="Changes" comment="Atualização de desafios e exercício projeto screen match da alura">
+      <change afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/comparator/AnoLancamentoComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/principal/PrincipalComListas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConverteCelsiusFarenheit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/desafios/convertertemperatura/ConverteCelsiusFarenheit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DesafioAlura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/desafios/banco/BancoDigital.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JogoAdvinhacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/desafios/advinhacao/JogoAdvinhacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/calculos/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/principal/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/modelos/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/modelos/Filme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/modelos/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/modelos/Serie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/modelos/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/estudos/formacaojava/alura/screenmatch/modelos/Titulo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,25 +37,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.import"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="estudos.formacaojava.alura" />
       <recent name="estudos.formacaojava.alura.screenmatch" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Principal">
+  <component name="RunManager" selected="Application.PrincipalComListas">
     <configuration name="BancoDigital" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="estudos.formacaojava.alura.desafios.banco.BancoDigital" />
       <module name="primeiroprojeto" />
@@ -84,27 +77,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="estudos.formacaojava.alura.screenmatch.calculos.Main" />
+    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="estudos.formacaojava.alura.screenmatch.principal.Principal" />
       <module name="primeiroprojeto" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="estudos.formacaojava.alura.screenmatch.Principal" />
+    <configuration name="PrincipalComListas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="estudos.formacaojava.alura.screenmatch.principal.PrincipalComListas" />
       <module name="primeiroprojeto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="estudos.formacaojava.alura.screenmatch.principal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrincipalComListas" />
         <item itemvalue="Application.Principal" />
         <item itemvalue="Application.BancoDigital" />
         <item itemvalue="Application.JogoAdvinhacao" />
         <item itemvalue="Application.ConverteCelsiusFarenheit" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -125,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700766247647</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Atualização de desafios e exercício projeto screen match da alura">
+      <option name="closed" value="true" />
+      <created>1700852629575</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700852629575</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +148,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Enviando exercícios da primeira etapa do curso de Formação Java da Alura." />
-    <option name="LAST_COMMIT_MESSAGE" value="Enviando exercícios da primeira etapa do curso de Formação Java da Alura." />
+    <MESSAGE value="Atualização de desafios e exercício projeto screen match da alura" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualização de desafios e exercício projeto screen match da alura" />
   </component>
 </project>
