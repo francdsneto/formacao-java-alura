@@ -45,7 +45,7 @@ public class AplicacaoCompra {
 
     private static class Cartao {
         private Double limiteCartao;
-        private List<Compra> compras;
+        private final List<Compra> compras;
 
         public Cartao(Double limiteCartao) {
             this.limiteCartao = limiteCartao;
@@ -63,10 +63,6 @@ public class AplicacaoCompra {
                 this.limiteCartao -= compra.getValor();
                 System.out.println("Compra realizada!");
             }
-        }
-
-        public Double getLimiteCartao() {
-            return limiteCartao;
         }
 
         @Override
