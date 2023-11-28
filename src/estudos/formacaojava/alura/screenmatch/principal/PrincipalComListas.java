@@ -8,6 +8,7 @@ import estudos.formacaojava.alura.screenmatch.modelos.Titulo;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 public class PrincipalComListas {
 
@@ -20,7 +21,7 @@ public class PrincipalComListas {
         maisUmFilme.avalia(15);
         Serie lost = new Serie("Lost", 2000);
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new ArrayList<>();
 
         lista.add(maisUmFilme);
         lista.add(meuFilme);
@@ -111,7 +112,8 @@ public class PrincipalComListas {
          * Duas formas de usar o comparador
          */
         //Collections.sort(lista,comparatorPorMediaAvaliacoes);
-        lista.sort(comparatorPorMediaAvaliacoes);
+        //lista.sort(comparatorPorMediaAvaliacoes);
+        lista.sort(Comparator.comparing(Titulo::pegaMedia));
         System.out.println(lista);
 
 
