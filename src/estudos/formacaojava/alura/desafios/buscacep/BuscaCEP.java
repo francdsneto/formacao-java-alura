@@ -2,6 +2,7 @@ package estudos.formacaojava.alura.desafios.buscacep;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import estudos.formacaojava.alura.desafios.buscacep.arquivo.GeradorArquivo;
 import estudos.formacaojava.alura.desafios.buscacep.cepapi.CepApi;
 import estudos.formacaojava.alura.desafios.buscacep.cepapi.iCepApi;
 import estudos.formacaojava.alura.desafios.buscacep.exception.CepInvalidoException;
@@ -22,7 +23,7 @@ public class BuscaCEP {
 
         Scanner scanner = new Scanner(System.in);
         iCepApi cepApi = new CepApi();
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        GeradorArquivo geradorArquivo = new GeradorArquivo();
 
         var tipoBusca = "";
         var cep = "";
@@ -55,10 +56,7 @@ public class BuscaCEP {
 
                         if(!cepInfo.erro())
                         {
-                            FileWriter writer = new FileWriter("cep.json");
-                            System.out.println(cepInfo);
-                            writer.write(gson.toJson(cepInfo));
-                            writer.close();
+                            geradorArquivo.geraArquivo(cepInfo,"cep.json");
                         }
                         else
                         {
@@ -83,12 +81,7 @@ public class BuscaCEP {
                     try
                     {
                         listaCepInfo = cepApi.buscar(siglaEstado,cidade,rua);
-
-                        FileWriter writer = new FileWriter("cep.json");
-                        System.out.println(listaCepInfo);
-                        writer.write(gson.toJson(listaCepInfo));
-                        writer.close();
-
+                        geradorArquivo.geraArquivo(listaCepInfo,"ceps.json");
                     }
                     catch (IOException | InterruptedException | CepInvalidoException | ParametroInvalidoException e)
                     {
