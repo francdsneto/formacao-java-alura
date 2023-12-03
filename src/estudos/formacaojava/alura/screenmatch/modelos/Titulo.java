@@ -1,7 +1,9 @@
 package estudos.formacaojava.alura.screenmatch.modelos;
 
-public class Titulo implements Comparable<Titulo> {
+import com.google.gson.annotations.SerializedName;
+import estudos.formacaojava.alura.screenmatch.excessao.ErroConversaoAnoException;
 
+public class Titulo implements Comparable<Titulo> {
     private String nome;
     private int anoDeLancamento;
     private boolean incluidoNoPlano;
@@ -12,6 +14,17 @@ public class Titulo implements Comparable<Titulo> {
     public Titulo(String nome, int anoDeLancamento) {
         this.nome = nome;
         this.anoDeLancamento = anoDeLancamento;
+    }
+
+    public Titulo(TituloOmdb meuTituloOmdb) {
+        this.nome = meuTituloOmdb.title();
+        if(meuTituloOmdb.year().length() > 4)
+            throw new ErroConversaoAnoException("""
+                    Não consegui converter o ano!
+                    Possui mais de 4 caracteres.
+                    """);
+        this.anoDeLancamento = Integer.parseInt(meuTituloOmdb.year());
+        this.duracaoEmMinutos = Integer.parseInt(meuTituloOmdb.runtime().split(" ")[0]);
     }
 
     public String getNome() {
@@ -80,5 +93,14 @@ public class Titulo implements Comparable<Titulo> {
     @Override
     public int compareTo(Titulo outroTitulo) {
         return this.getNome().compareTo(outroTitulo.getNome());
+    }
+
+    @Override
+    public String toString() {
+        return "Titulo{" +
+                "nome='" + nome + '\'' +
+                ", anoDeLancamento=" + anoDeLancamento +
+                ", duracaoEmMinutos="+ duracaoEmMinutos +
+                '}';
     }
 }
